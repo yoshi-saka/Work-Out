@@ -4,9 +4,8 @@ Copyright muscle traning. All Rights Reseved.
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-  <script>
-  $(function(){
+<script>
+$(function(){
       // フッターを最下部に固定
   var $ftr = $('.footer');
   if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
@@ -50,7 +49,7 @@ Copyright muscle traning. All Rights Reseved.
       fileReader.readAsDataURL(file);
 
     });
-  })
+ 
 
   // メッセージ表示
   var $jsShowMsg = $('#js-show-msg');
@@ -69,6 +68,7 @@ Copyright muscle traning. All Rights Reseved.
   $('.js-switch-img-sub').on('click',function(e){
     $('#js-switch-img-main').attr('src',$(this).attr('src'));
   })
-  </script>
+ })
+</script>
   </body>
 </html>
