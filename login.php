@@ -114,7 +114,7 @@ require('head.php');
 </div>
 
 <label class="<?php echo getErr('email'); ?>">
-<input type="text" name="email" placeholder="メールアドレス" value="<?php echo getFormData('email'); ?>">
+<input type="text" name="email" placeholder="メールアドレス" value="<?php echo getFormData('email'); ?>" autocomplete="off">
 </label>
 <div class="area-msg">
 <?php echo getErrMsg('email'); ?>

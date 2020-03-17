@@ -1,8 +1,8 @@
 <?php
 // ログを取るか
-ini_set('log_errors', 'on');
-// ログの出力ファイル
-ini_set('error_log', 'php.log');
+// ini_set('log_errors', 'off');
+// // ログの出力ファイル
+// ini_set('error_log', 'php.log');
 
 // デバッグフラグ
 $debug_flg = true;
@@ -577,7 +577,7 @@ function getMyMsgAndBoard($u_id){
     $rst = $stmt->fetchAll();
     if(!empty($rst)){
       foreach($rst as $key => $val){
-        $sql = 'SELECT * FROM message AS m left join users as u on m.to_user = u.id WHERE board_id = :id ORDER BY send_date DESC';
+        $sql = 'SELECT * FROM message AS m left join users as u on m.to_user = u.id WHERE board_id = :id ORDER BY send_date desc';
         $data = array(':id' => $val['id']);
         $stmt = queryPost($dbh, $sql, $data);
         $rst[$key]['msg'] = $stmt->fetchAll();

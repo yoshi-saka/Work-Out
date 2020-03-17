@@ -101,6 +101,9 @@ require('head.php');
 .underline{
   text-decoration: underline;
 }
+.form{
+  width: 400px;
+}
 </style>
 <body>
 <!-- メニュー -->

@@ -88,7 +88,7 @@ require('head.php');
 } ?>>新しい日付</option>
 <option value="2" <?php if(getFormData('sort', true) == 2){
   echo 'selected';
-} ?>>前の日付</option>
+} ?>>古い日付</option>
 </select>
 </div>
 <input type="submit" value="検索">

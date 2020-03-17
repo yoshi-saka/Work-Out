@@ -9,5 +9,5 @@
   <!-- フォントアイコン -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
    <!--フォントの読み込み-->
-   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Amiri|Kosugi+Maru&display=swap" rel="stylesheet">
 </head>

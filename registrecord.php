@@ -168,7 +168,7 @@ require('head.php');
 
             <label class="<?php echo getErr('name'); ?>">
             部位<span class="required">必須</span>
-              <input type="text" name="name" value="<?php echo getFormData('name'); ?>">
+              <input type="text" name="name" value="<?php echo getFormData('name'); ?>" autocomplete="off">
             </label>
             <div class="area-msg">
               <?php echo getErrMsg('name'); ?>

@@ -85,7 +85,7 @@ require('head.php');
             <?php echo getErrMsg('common'); ?>
           </div>
           <label class="<?php echo getErr('email'); ?>">
-            <input type="text" name="email" placeholder="Email" value="<?php echo getFormData('email'); ?>">
+            <input type="text" name="email" placeholder="Email" value="<?php echo getFormData('email'); ?>" autocomplete="off">
           </label>
           <div class="area-msg">
             <?php echo getErrMsg('email'); ?>
