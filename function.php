@@ -592,8 +592,6 @@ function getMyMsgAndBoard($u_id){
     error_log('エラー発生：'.$e->getMessage());
   }
 }
-// $sql = 'SELECT * FROM message LEFT JOIN users ON  message.from_user = users.id WHERE board_id = :id AND delete_flg = 0 ORDER BY send_date DESC';
-// $sql = 'SELECT * FROM message AS m left join users as u on m.from_user = u.id WHERE board_id = :id AND delete_flg = 0 ORDER BY send_date DESC';
 
 function getDeleteRecord($id){
   debug('DB削除しました。');
